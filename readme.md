@@ -1,23 +1,23 @@
-# How to build this Image
+# How to build this Docker Image
 
 1. Open Terminal.
-2. Build Image with this command and wait until it's done
+2. Build the Docker Image with this command and wait until process is complete.
    ```bat
        docker build -t 'centos7-php54' .
    ```
 
-3. Then, let's create a Container :<br/>
+3. Create the Container :<br/>
    ```bat
        docker container create --name centos-php54 -p 8054:80 -v /home/userPC/Sites/localhost:/var/www/html/ centos7-php54
    ```
    Note: change 'userPC' with user on your operating system.
 
-4. Start Container.
+4. Start the Container.
    ```bat
        docker start centos-php54
    ```
 
-5. Stop Container.
+5. Stop the Container.
    ```bat
        docker stop centos-php54
    ```
