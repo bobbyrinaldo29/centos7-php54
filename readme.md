@@ -5,19 +5,22 @@
    ```bat
        docker build -t 'centos7-php54' .
    ```
+3. Create a folder named `local_container` in `/home/your-user/`
 
-3. Create the Container :<br/>
+4. Inside `local_container` folder, create a `log` folder and set its permissions to 777.
+
+5. Create the Container :<br/>
    ```bat
-       docker container create --name centos-php54 -p 8054:80 -v /home/userPC/Sites/localhost:/var/www/html/ centos7-php54
+       docker container create --name centos-php54 -p 8054:80 -v /home/your-user/local_container/:/var/www/html/ centos7-php54
    ```
-   Note: change 'userPC' with user on your operating system.
+   Note: change `your-user` with user on your operating system.
 
-4. Start the Container.
+6. Start the Container.
    ```bat
        docker start centos-php54
    ```
 
-5. Stop the Container.
+7. Stop the Container.
    ```bat
        docker stop centos-php54
    ```
