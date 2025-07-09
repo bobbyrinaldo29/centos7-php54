@@ -1,0 +1,40 @@
+a:21:{s:7:"attribs";a:6:{s:5:"xmlns";s:35:"http://pear.php.net/dtd/package-2.0";s:11:"xmlns:tasks";s:33:"http://pear.php.net/dtd/tasks-1.0";s:9:"xmlns:xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:15:"packagerversion";s:5:"1.4.7";s:7:"version";s:3:"2.0";s:18:"xsi:schemaLocation";s:147:"http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd";}s:4:"name";s:4:"ssh2";s:7:"channel";s:12:"pecl.php.net";s:7:"summary";s:32:"Bindings for the libssh2 library";s:11:"description";s:130:"Provides bindings to the functions of libssh2 which implements the SSH2 protocol.
+    libssh2 is available from http:/libssh2.org/";s:4:"lead";a:4:{i:0;a:4:{s:4:"name";s:18:"Casper Langemeijer";s:4:"user";s:11:"langemeijer";s:5:"email";s:19:"langemeijer@php.net";s:6:"active";s:3:"yes";}i:1;a:4:{s:4:"name";s:11:"Pierre Joye";s:4:"user";s:6:"pajoye";s:5:"email";s:14:"pierre@php.net";s:6:"active";s:3:"yes";}i:2;a:4:{s:4:"name";s:13:"Mike Sullivan";s:4:"user";s:7:"mikesul";s:5:"email";s:15:"mikesul@php.net";s:6:"active";s:2:"no";}i:3;a:4:{s:4:"name";s:12:"Sara Golemon";s:4:"user";s:7:"pollita";s:5:"email";s:15:"pollita@php.net";s:6:"active";s:2:"no";}}s:4:"date";s:10:"2012-10-15";s:7:"version";a:2:{s:7:"release";s:4:"0.12";s:3:"api";s:4:"0.12";}s:9:"stability";a:2:{s:7:"release";s:4:"beta";s:3:"api";s:4:"beta";}s:7:"license";a:2:{s:7:"attribs";a:1:{s:3:"uri";s:26:"http://www.php.net/license";}s:8:"_content";s:11:"PHP License";}s:5:"notes";s:809:"- Bumped libssh2 version requirement to 1.2 (aug 2009)
+- Added ssh2_auth_agent() - SSH agent authentication support (with libssh >= 1.2.3)
+- Added ssh2_sftp_chmod() (fixed bug #59880)
+- Added support for stream_set_timeout() to channel streams (fixed bug #56377) (with libssh >= 1.2.9)
+- Added keyboard-interactive to ssh2_auth_password() (fixed bugs #61760 and #54916)
+- Add license file as requested in bug #59980
+- Allow for tilde (~) in public and private keyfile paths
+- Be more verbose about any errors within ssh2_scp_send
+- Fixed bug #56425 - Problem with ssh2_scp_send
+- Fixed bug #59794 - ssh2.sftp protocol wrapper works incorrectly for paths which contain a '#'
+- Fixed bug #63192 - Check if connection is authenticated.
+- Fixed bug #58576 - Handle error values from reads and writes to a channel.";s:8:"contents";a:1:{s:3:"dir";a:2:{s:7:"attribs";a:1:{s:4:"name";s:1:"/";}s:4:"file";a:6:{i:0;a:1:{s:7:"attribs";a:2:{s:4:"role";s:3:"src";s:4:"name";s:9:"config.m4";}}i:1;a:1:{s:7:"attribs";a:2:{s:4:"role";s:3:"src";s:4:"name";s:6:"ssh2.c";}}i:2;a:1:{s:7:"attribs";a:2:{s:4:"role";s:3:"src";s:4:"name";s:10:"php_ssh2.h";}}i:3;a:1:{s:7:"attribs";a:2:{s:4:"role";s:3:"src";s:4:"name";s:21:"ssh2_fopen_wrappers.c";}}i:4;a:1:{s:7:"attribs";a:2:{s:4:"role";s:3:"src";s:4:"name";s:11:"ssh2_sftp.c";}}i:5;a:1:{s:7:"attribs";a:2:{s:4:"role";s:3:"src";s:4:"name";s:7:"LICENSE";}}}}}s:12:"dependencies";a:1:{s:8:"required";a:2:{s:3:"php";a:2:{s:3:"min";s:5:"4.0.0";s:3:"max";s:5:"6.0.0";}s:13:"pearinstaller";a:1:{s:3:"min";s:5:"1.4.0";}}}s:17:"providesextension";s:4:"ssh2";s:13:"extsrcrelease";a:1:{s:15:"configureoption";a:1:{s:7:"attribs";a:3:{s:4:"name";s:9:"with-ssh2";s:7:"default";s:10:"autodetect";s:6:"prompt";s:15:"libssh2 prefix?";}}}s:9:"changelog";a:1:{s:7:"release";a:5:{i:0;a:3:{s:4:"date";s:10:"2011-09-22";s:7:"version";a:2:{s:7:"release";s:6:"0.11.3";s:3:"api";s:6:"0.11.0";}s:5:"notes";s:329:"- Fixed bug#24349 (ssh2_sftp_mkdir fails with trailing slash)
+- Fixed bug#22729 (using ssh2.sftp stream on 64bit vs. 32bit)
+- Fixed bug#22671 (trailing spaces trimmed from filenames)
+- Fixed bug#17142 (Missing EOF detection in ssh2.sftp:// streams)
+- Fixed bug#16944 (Segmentation fault SIGSEGV with protected variable with ssh2)";}i:1;a:5:{s:4:"date";s:10:"2009-11-28";s:7:"version";a:2:{s:7:"release";s:6:"0.11.1";s:3:"api";s:6:"0.11.0";}s:9:"stability";a:2:{s:7:"release";s:4:"beta";s:3:"api";s:4:"beta";}s:7:"license";a:2:{s:7:"attribs";a:1:{s:3:"uri";s:26:"http://www.php.net/license";}s:8:"_content";s:11:"PHP License";}s:5:"notes";s:67:"- Fixed the extension version info 
+. no other changes since 0.11.1";}i:2;a:5:{s:4:"date";s:10:"2009-11-28";s:7:"version";a:2:{s:7:"release";s:6:"0.11.1";s:3:"api";s:6:"0.11.0";}s:9:"stability";a:2:{s:7:"release";s:4:"beta";s:3:"api";s:4:"beta";}s:7:"license";a:2:{s:7:"attribs";a:1:{s:3:"uri";s:26:"http://www.php.net/license";}s:8:"_content";s:11:"PHP License";}s:5:"notes";s:320:"- Fixed bug #9500, SSH2 sockets not being closed properly because of close vs closesocket difference
+- Fixed Windows support 
+- Support for latest libssh2 release
+- Fix build with PHP 5.3
+- Fixed incorrect return values for rename/unlink/mkdir/rmdir with sftp functions/streams
+- Fixed various memory leaks and segfaults";}i:3;a:5:{s:4:"date";s:10:"2009-11-28";s:7:"version";a:2:{s:7:"release";s:10:"0.11.1-dev";s:3:"api";s:6:"0.11.0";}s:9:"stability";a:2:{s:7:"release";s:4:"beta";s:3:"api";s:4:"beta";}s:7:"license";a:2:{s:7:"attribs";a:1:{s:3:"uri";s:26:"http://www.php.net/license";}s:8:"_content";s:11:"PHP License";}s:5:"notes";s:194:"- Support for latest libssh2 release
+- Fix build with PHP 5.3
+- Fixed incorrect return values for rename/unlink/mkdir/rmdir with sftp functions/streams
+- Fixed various memory leaks and segfaults";}i:4;a:5:{s:4:"date";s:10:"2008-12-08";s:7:"version";a:2:{s:7:"release";s:6:"0.11.0";s:3:"api";s:6:"0.11.0";}s:9:"stability";a:2:{s:7:"release";s:4:"beta";s:3:"api";s:4:"beta";}s:7:"license";a:2:{s:7:"attribs";a:1:{s:3:"uri";s:26:"http://www.php.net/license";}s:8:"_content";s:11:"PHP License";}s:5:"notes";s:194:"- Support for latest libssh2 release
+- Fix build with PHP 5.3
+- Fixed incorrect return values for rename/unlink/mkdir/rmdir with sftp functions/streams
+- Fixed various memory leaks and segfaults";}}}s:8:"filelist";a:1:{s:7:"ssh2.so";a:6:{s:4:"role";s:3:"src";s:4:"name";s:7:"ssh2.so";s:12:"installed_as";s:30:"/usr/lib64/php/modules/ssh2.so";s:7:"php_api";i:0;s:12:"zend_mod_api";i:0;s:12:"zend_ext_api";i:0;}}s:12:"_lastversion";N;s:3:"old";a:7:{s:7:"version";s:4:"0.12";s:12:"release_date";s:10:"2012-10-15";s:13:"release_state";s:4:"beta";s:15:"release_license";s:11:"PHP License";s:13:"release_notes";s:809:"- Bumped libssh2 version requirement to 1.2 (aug 2009)
+- Added ssh2_auth_agent() - SSH agent authentication support (with libssh >= 1.2.3)
+- Added ssh2_sftp_chmod() (fixed bug #59880)
+- Added support for stream_set_timeout() to channel streams (fixed bug #56377) (with libssh >= 1.2.9)
+- Added keyboard-interactive to ssh2_auth_password() (fixed bugs #61760 and #54916)
+- Add license file as requested in bug #59980
+- Allow for tilde (~) in public and private keyfile paths
+- Be more verbose about any errors within ssh2_scp_send
+- Fixed bug #56425 - Problem with ssh2_scp_send
+- Fixed bug #59794 - ssh2.sftp protocol wrapper works incorrectly for paths which contain a '#'
+- Fixed bug #63192 - Check if connection is authenticated.
+- Fixed bug #58576 - Handle error values from reads and writes to a channel.";s:12:"release_deps";a:3:{i:0;a:4:{s:4:"type";s:3:"php";s:3:"rel";s:2:"le";s:7:"version";s:5:"6.0.0";s:8:"optional";s:2:"no";}i:1;a:4:{s:4:"type";s:3:"php";s:3:"rel";s:2:"ge";s:7:"version";s:5:"4.0.0";s:8:"optional";s:2:"no";}i:2;a:6:{s:4:"type";s:3:"pkg";s:7:"channel";s:12:"pear.php.net";s:4:"name";s:4:"PEAR";s:3:"rel";s:2:"ge";s:7:"version";s:5:"1.4.0";s:8:"optional";s:2:"no";}}s:11:"maintainers";a:4:{i:0;a:5:{s:4:"name";s:18:"Casper Langemeijer";s:5:"email";s:19:"langemeijer@php.net";s:6:"active";s:3:"yes";s:6:"handle";s:11:"langemeijer";s:4:"role";s:4:"lead";}i:1;a:5:{s:4:"name";s:11:"Pierre Joye";s:5:"email";s:14:"pierre@php.net";s:6:"active";s:3:"yes";s:6:"handle";s:6:"pajoye";s:4:"role";s:4:"lead";}i:2;a:5:{s:4:"name";s:13:"Mike Sullivan";s:5:"email";s:15:"mikesul@php.net";s:6:"active";s:2:"no";s:6:"handle";s:7:"mikesul";s:4:"role";s:4:"lead";}i:3;a:5:{s:4:"name";s:12:"Sara Golemon";s:5:"email";s:15:"pollita@php.net";s:6:"active";s:2:"no";s:6:"handle";s:7:"pollita";s:4:"role";s:4:"lead";}}}s:10:"xsdversion";s:3:"2.0";s:13:"_lastmodified";i:1680235977;}
